@@ -1,0 +1,13 @@
+--- xtraceroute-0.8.14/xtraceroute.desktop~	Mon Feb 22 22:48:00 1999
++++ xtraceroute-0.8.14/xtraceroute.desktop	Thu Jun 28 16:58:53 2001
+@@ -3,8 +3,10 @@
+ Name[es]=xtraceroute
+ Name[fr]=xtraceroute
+ Comment=A graphical traceroute
++Comment[de]=Ein graphisches traceroute
+ Comment[es]=Un traceroute gráfico
+ Comment[fr]=Un traceroute graphique
++Comment[pl]=Graficzna nak³adka na polecenie traceroute
+ Exec=xtraceroute
+ Icon=xtraceroute.png
+ Terminal=0
