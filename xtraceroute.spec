@@ -35,7 +35,10 @@ implementation (Mesa or OpenGL), GTK+, GtkGLArea, and tifflib.
 %description -l pl
 xtraceroute jest graficzn± wersj± programu traceroute, ¶ledz±cego
 trasê Twoich pakietów IP do celu. Pokazuje ¶cie¿kê pakietów na
-obracaj±cej siê kuli ziemskiej.
+obracaj±cej siê kuli ziemskiej jako ¿ó³t± liniê pomiêdzy miejscami,
+które s± przedstawione jako ma³e kropki w ró¿nych kolorach.
+Program wymaga relatywnie szybkiej maszyny z implementacj± OpenGL'a
+(Mesa lub OpenGL), GTK+, GtkGLArea oraz tifflib.
 
 %prep
 %setup -q -a1
