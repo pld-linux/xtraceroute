@@ -69,11 +69,12 @@ OpenGL), GTK+, GtkGLArea oraz tifflib.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_applnkdir}/Network,%{_pixmapsdir}}
+install -d $RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir}}
 
-%{__make} DESTDIR=$RPM_BUILD_ROOT install
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
-install xtraceroute.desktop $RPM_BUILD_ROOT%{_applnkdir}/Network
+install xtraceroute.desktop $RPM_BUILD_ROOT%{_desktopdir}
 install xtraceroute.png $RPM_BUILD_ROOT%{_pixmapsdir}
 install networks.cache $RPM_BUILD_ROOT%{_datadir}/xtraceroute
 install hosts.cache $RPM_BUILD_ROOT%{_datadir}/xtraceroute
@@ -92,5 +93,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/xtraceroute/*.cache
 %{_datadir}/xtraceroute/*.png
 %attr(755,root,root) %{_datadir}/xtraceroute/*.sh
-%{_applnkdir}/Network/xtraceroute.desktop
+%{_desktopdir}/xtraceroute.desktop
 %{_pixmapsdir}/*
