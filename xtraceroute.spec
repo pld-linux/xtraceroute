@@ -5,8 +5,6 @@ Version:	0.9.0
 Release:	2
 License:	GPL 
 Group:		X11/Applications/Networking
-Group(de):	X11/Applikationen/Netzwerkwesen
-Group(pl):	X11/Aplikacje/Sieciowe
 Source0:	http://www.dtek.chalmers.se/~d3august/xt/dl/%{name}-%{version}.tar.gz
 Source1:	http://www.dtek.chalmers.se/~d3august/xt/dl/ndg_files.tar.gz
 Patch0:		%{name}-desktop.patch
