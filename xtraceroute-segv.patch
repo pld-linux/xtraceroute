@@ -1,0 +1,11 @@
+--- xtraceroute-0.9.1/extprog.c.orig	2003-03-25 01:21:46.000000000 +0100
++++ xtraceroute-0.9.1/extprog.c	2003-05-18 13:31:40.000000000 +0200
+@@ -241,7 +241,7 @@
+ parse_row_from_traceroute(char *input)
+ {
+   int i;
+-  int no;
++  int no = 1; /* no SEGV if sscanf fails */
+   int last;
+   char *clistrow[3];
+ 

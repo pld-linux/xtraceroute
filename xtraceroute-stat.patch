@@ -1,0 +1,12 @@
+--- xtraceroute-0.9.1/dbio.c.orig	2003-03-02 14:41:41.000000000 +0100
++++ xtraceroute-0.9.1/dbio.c	2003-05-18 14:06:04.000000000 +0200
+@@ -172,7 +172,7 @@
+       if(!strcmp(mode, "w"))
+         {
+           struct stat sb;
+-          if(!stat(fn, &sb))
+-            mkdir(fn, 700);    // Too paranoid?
++          if(stat(fn, &sb))
++            mkdir(fn, 0700);    // Too paranoid?
+ 	  else if(!(sb.st_mode&S_IFDIR))
+             {

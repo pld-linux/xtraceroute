@@ -1,0 +1,63 @@
+--- xtraceroute-0.9.1/configure.in.orig	2003-05-18 13:08:22.000000000 +0200
++++ xtraceroute-0.9.1/configure.in	2003-05-18 13:16:59.000000000 +0200
+@@ -28,20 +28,20 @@
+ then
+ 	case $CC in
+ 	gcc) 
+-		CFLAGS="-g -Wall -Wpointer-arith -Wwrite-strings -DXT_DEBUG"
++		CFLAGS="-g -Wall -Wpointer-arith -Wwrite-strings -DXT_DEBUG $CFLAGS"
+ 		;;
+ 	icc)
+ 		# Intel C compiler (linux and xBSD)
+ 		# -w2 is very noisy, but there's nothing between it and
+ 		# -w1, which is default.
+-		CFLAGS="-g -w2 -DXT_DEBUG"
++		CFLAGS="-g -w2 -DXT_DEBUG $CFLAGS"
+ 		;;
+ 	ccc)
+ 		# Compaq C compiler (linux on Alpha and Tru64)
+-		CFLAGS="-g -msg_enable level4 -msg_enable questcode -DXT_DEBUG"
++		CFLAGS="-g -msg_enable level4 -msg_enable questcode -DXT_DEBUG $CFLAGS"
+ 		;;
+ 	cc)
+-		CFLAGS="-g -DXT_DEBUG"
++		CFLAGS="-g -DXT_DEBUG $CFLAGS"
+ 
+ 		case "$host_os" in
+ 		irix*)
+@@ -53,24 +53,22 @@
+ 		esac
+ 		;;
+ 	*)
+-		CFLAGS="-g -DXT_DEBUG"
++		CFLAGS="-g -DXT_DEBUG $CFLAGS"
+ 		;;
+ 	esac
+ else
+ 	case $CC in
+ 	gcc) 
+-		CFLAGS="-Wall -O3 $CFLAGS"
++		CFLAGS="-Wall $CFLAGS"
+ 		;;
+ 	icc)
+ 		# Intel C compiler (linux and xBSD)
+-		CFLAGS="-O2"
+ 		;;
+ 	ccc)
+ 		# Compaq C compiler (linux on Alpha and Tru64)
+-		CFLAGS="-fast"
+ 		;;
+ 	cc)
+-		CFLAGS="-g -DXT_DEBUG"
++		CFLAGS="-DXT_DEBUG $CFLAGS"
+ 
+ 		case "$host_os" in
+ 		irix*)
+@@ -82,7 +80,6 @@
+ 		esac
+ 		;;
+ 	*)
+-		CFLAGS="-O"
+ 		;;
+ 	esac
+ fi

@@ -1,0 +1,71 @@
+--- xtraceroute-0.9.1/main.c.orig	2003-03-25 01:30:47.000000000 +0100
++++ xtraceroute-0.9.1/main.c	2003-05-18 12:51:33.000000000 +0200
+@@ -525,7 +525,7 @@
+ about_program(GtkWidget *wi, gpointer *data)
+ {
+   char mess[501];
+-  g_snprintf(mess,500,_("%s%s\nBy Björn Augustsson (d3august@dtek.chalmers.se)\n"
++  g_snprintf(mess,500,_("%s%s\nBy Bjorn Augustsson (d3august@dtek.chalmers.se)\n"
+ 	  "Homepage: http://www.dtek.chalmers.se/~d3august/xt\n")
+ 	  ,_(versionstring),VERSION);
+   tell_user(mess);
+--- xtraceroute-0.9.1/po/es.po.orig	2003-04-25 22:20:06.000000000 +0200
++++ xtraceroute-0.9.1/po/es.po	2003-05-18 12:52:02.000000000 +0200
+@@ -1259,10 +1259,10 @@
+ msgstr ""
+ 
+ #: main.c:528
+-#, fuzzy, c-format
++#, c-format
+ msgid ""
+ "%s%s\n"
+-"By Bjrn Augustsson (d3august@dtek.chalmers.se)\n"
++"By Bjorn Augustsson (d3august@dtek.chalmers.se)\n"
+ "Homepage: http://www.dtek.chalmers.se/~d3august/xt\n"
+ msgstr ""
+ "%s%s\n"
+--- xtraceroute-0.9.1/po/fr.po.orig	2003-04-25 22:20:07.000000000 +0200
++++ xtraceroute-0.9.1/po/fr.po	2003-05-18 12:52:22.000000000 +0200
+@@ -1254,10 +1254,10 @@
+ msgstr ""
+ 
+ #: main.c:528
+-#, fuzzy, c-format
++#, c-format
+ msgid ""
+ "%s%s\n"
+-"By Bjrn Augustsson (d3august@dtek.chalmers.se)\n"
++"By Bjorn Augustsson (d3august@dtek.chalmers.se)\n"
+ "Homepage: http://www.dtek.chalmers.se/~d3august/xt\n"
+ msgstr ""
+ "%s%s\n"
+--- xtraceroute-0.9.1/po/ja.po.orig	2003-03-02 16:43:33.000000000 +0100
++++ xtraceroute-0.9.1/po/ja.po	2003-05-18 12:52:38.000000000 +0200
+@@ -1248,10 +1248,10 @@
+ msgstr ""
+ 
+ #: main.c:528
+-#, fuzzy, c-format
++#, c-format
+ msgid ""
+ "%s%s\n"
+-"By Björn Augustsson (d3august@dtek.chalmers.se)\n"
++"By Bjorn Augustsson (d3august@dtek.chalmers.se)\n"
+ "Homepage: http://www.dtek.chalmers.se/~d3august/xt\n"
+ msgstr ""
+ "%s%s\n"
+--- xtraceroute-0.9.1/po/sv.po.orig	2003-04-25 22:20:08.000000000 +0200
++++ xtraceroute-0.9.1/po/sv.po	2003-05-18 12:52:59.000000000 +0200
+@@ -1253,10 +1253,10 @@
+ msgstr ""
+ 
+ #: main.c:528
+-#, fuzzy, c-format
++#, c-format
+ msgid ""
+ "%s%s\n"
+-"By Bjrn Augustsson (d3august@dtek.chalmers.se)\n"
++"By Bjorn Augustsson (d3august@dtek.chalmers.se)\n"
+ "Homepage: http://www.dtek.chalmers.se/~d3august/xt\n"
+ msgstr ""
+ "%s%s\n"

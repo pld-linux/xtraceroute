@@ -1,13 +1,17 @@
 Summary:	An X and GTK+ based graphical display of traceroute's output
 Summary(pl):	Program wy¶wietlaj±cy traceroute w postaci graficznej pod X/GTK+
 Name:		xtraceroute
-Version:	0.9.0
-Release:	2
+Version:	0.9.1
+Release:	1
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://www.dtek.chalmers.se/~d3august/xt/dl/%{name}-%{version}.tar.gz
 Source1:	http://www.dtek.chalmers.se/~d3august/xt/dl/ndg_files.tar.gz
 Patch0:		%{name}-desktop.patch
+Patch1:		%{name}-po.patch
+Patch2:		%{name}-opt.patch
+Patch3:		%{name}-segv.patch
+Patch4:		%{name}-stat.patch
 URL:		http://www.dtek.chalmers.se/~d3august/xt/
 BuildRequires:	OpenGL-devel
 BuildRequires:	automake
@@ -42,6 +46,10 @@ OpenGL), GTK+, GtkGLArea oraz tifflib.
 %prep
 %setup -q -a1
 %patch0 -p1
+%patch1 -p1
+%patch2 -p1
+%patch3 -p1
+%patch4 -p1
 
 %build
 %{__gettextize}
@@ -52,7 +60,8 @@ OpenGL), GTK+, GtkGLArea oraz tifflib.
 %configure \
 	--with-lib-GL \
 	--with-traceroute=/usr/sbin/traceroute \
-	--with-host=/usr/bin/host-nikhof
+	--with-host=/usr/bin/host-nikhof \
+	%{?debug:--enable-debug}
 
 %{__make}
 
@@ -67,7 +76,6 @@ install xtraceroute.png $RPM_BUILD_ROOT%{_pixmapsdir}
 install networks.cache $RPM_BUILD_ROOT%{_datadir}/xtraceroute
 install hosts.cache $RPM_BUILD_ROOT%{_datadir}/xtraceroute
 
-
 %find_lang %{name}
 
 %clean
@@ -78,6 +86,9 @@ rm -rf $RPM_BUILD_ROOT
 %doc README AUTHORS BUGS ChangeLog NEWS TODO
 %attr(755,root,root) %{_bindir}/xtraceroute
 %{_mandir}/man1/*
-%{_datadir}/xtraceroute
+%dir %{_datadir}/xtraceroute
+%{_datadir}/xtraceroute/*.cache
+%{_datadir}/xtraceroute/*.png
+%attr(755,root,root) %{_datadir}/xtraceroute/*.sh
 %{_applnkdir}/Network/xtraceroute.desktop
 %{_pixmapsdir}/*
