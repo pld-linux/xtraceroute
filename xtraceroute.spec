@@ -47,8 +47,8 @@ OpenGL), GTK+, GtkGLArea oraz tifflib.
 
 %build
 %{__gettextize}
-aclocal
-autoheader
+%{__aclocal}
+%{__autoheader}
 %{__autoconf}
 %{__automake}
 %configure \
