@@ -3,7 +3,7 @@ Summary(pl):	Program wy¶wietlaj±cy traceroute w postaci graficznej pod X/GTK+
 Name:		xtraceroute
 Version:	0.9.0
 Release:	2
-License:	GPL 
+License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://www.dtek.chalmers.se/~d3august/xt/dl/%{name}-%{version}.tar.gz
 Source1:	http://www.dtek.chalmers.se/~d3august/xt/dl/ndg_files.tar.gz
@@ -37,9 +37,9 @@ implementation (Mesa or OpenGL), GTK+, GtkGLArea, and tifflib.
 xtraceroute jest graficzn± wersj± programu traceroute, ¶ledz±cego
 trasê Twoich pakietów IP do celu. Pokazuje ¶cie¿kê pakietów na
 obracaj±cej siê kuli ziemskiej jako ¿ó³t± liniê pomiêdzy miejscami,
-które s± przedstawione jako ma³e kropki w ró¿nych kolorach.
-Program wymaga relatywnie szybkiej maszyny z implementacj± OpenGL'a
-(Mesa lub OpenGL), GTK+, GtkGLArea oraz tifflib.
+które s± przedstawione jako ma³e kropki w ró¿nych kolorach. Program
+wymaga relatywnie szybkiej maszyny z implementacj± OpenGL'a (Mesa lub
+OpenGL), GTK+, GtkGLArea oraz tifflib.
 
 %prep
 %setup -q -a1
@@ -73,12 +73,12 @@ gzip -9nf README AUTHORS BUGS ChangeLog NEWS TODO
 
 %find_lang %{name}
 
-%clean 
+%clean
 rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc *.gz 
+%doc *.gz
 %attr(755,root,root) %{_bindir}/xtraceroute
 %{_mandir}/man1/*
 %{_datadir}/xtraceroute
