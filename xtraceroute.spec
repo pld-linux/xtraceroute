@@ -2,7 +2,7 @@ Summary:	An X and GTK+ based graphical display of traceroute's output
 Summary(pl):	Program wy¶wietlaj±cy traceroute w postaci graficznej pod X/GTK+
 Name:		xtraceroute
 Version:	0.8.14
-Release:	7
+Release:	8
 License:	GPL 
 Group:		X11/Applications/Networking
 Group(de):	X11/Applikationen/Netzwerkwesen
