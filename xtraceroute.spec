@@ -50,7 +50,7 @@ gettextize --copy --force
 aclocal
 autoheader
 autoconf
-automake -a -c
+automake -a -c -f
 %configure \
 	--with-lib-GL \
 	--with-traceroute=/usr/sbin/traceroute \
