@@ -6,7 +6,9 @@ Release:	1
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://www.dtek.chalmers.se/~d3august/xt/dl/%{name}-%{version}.tar.gz
+# Source0-md5:	ac212fed3ac9dc06851e5ffbe95901c0
 Source1:	http://www.dtek.chalmers.se/~d3august/xt/dl/ndg_files.tar.gz
+# Source1-md5:	0e2d6ab6a780b49acbd8f706840380d9
 Patch0:		%{name}-desktop.patch
 Patch1:		%{name}-po.patch
 Patch2:		%{name}-opt.patch
