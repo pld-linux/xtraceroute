@@ -49,8 +49,8 @@ OpenGL), GTK+, GtkGLArea oraz tifflib.
 gettextize --copy --force
 aclocal
 autoheader
-autoconf
-automake -a -c -f
+%{__autoconf}
+%{__automake}
 %configure \
 	--with-lib-GL \
 	--with-traceroute=/usr/sbin/traceroute \
