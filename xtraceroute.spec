@@ -46,7 +46,7 @@ OpenGL), GTK+, GtkGLArea oraz tifflib.
 %patch0 -p1
 
 %build
-gettextize --copy --force
+%{__gettextize}
 aclocal
 autoheader
 %{__autoconf}
