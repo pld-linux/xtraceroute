@@ -63,8 +63,8 @@ install -d $RPM_BUILD_ROOT{%{_applnkdir}/Network,%{_pixmapsdir}}
 
 install xtraceroute.desktop $RPM_BUILD_ROOT%{_applnkdir}/Network
 install xtraceroute.png $RPM_BUILD_ROOT%{_pixmapsdir}
-install lib/networks.cache $RPM_BUILD_ROOT%{_datadir}/xtraceroute
-install lib/hosts.cache $RPM_BUILD_ROOT%{_datadir}/xtraceroute
+install networks.cache $RPM_BUILD_ROOT%{_datadir}/xtraceroute
+install hosts.cache $RPM_BUILD_ROOT%{_datadir}/xtraceroute
 
 gzip -9nf README AUTHORS BUGS ChangeLog NEWS TODO
 
