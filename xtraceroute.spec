@@ -9,16 +9,17 @@ Group(de):	X11/Applikationen/Netzwerkwesen
 Group(pl):	X11/Aplikacje/Sieciowe
 Source0:	http://www.dtek.chalmers.se/~d3august/xt/dl/%{name}-%{version}.tar.gz
 Source1:	http://www.dtek.chalmers.se/~d3august/xt/dl/ndg_files.tar.gz
+Patch0:		%{name}-desktop.patch
 URL:		http://www.dtek.chalmers.se/~d3august/xt/
-BuildRequires:	gtkglarea-devel
 BuildRequires:	OpenGL-devel
-BuildRequires:	libtiff-devel
-BuildRequires:	gettext-devel
-BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	autoconf
+BuildRequires:	gettext-devel
+BuildRequires:	gtkglarea-devel
+BuildRequires:	libtiff-devel
 Requires:	/usr/sbin/traceroute
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 ExcludeArch:	ia64
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_noautoreqdep	libGL.so.1 libGLU.so.1
 %define		_prefix		/usr/X11R6
@@ -42,6 +43,7 @@ Program wymaga relatywnie szybkiej maszyny z implementacj± OpenGL'a
 
 %prep
 %setup -q -a1
+%patch0 -p1
 
 %build
 gettextize --copy --force
