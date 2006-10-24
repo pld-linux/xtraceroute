@@ -2,7 +2,7 @@ Summary:	An X and GTK+ based graphical display of traceroute's output
 Summary(pl):	Program wy¶wietlaj±cy traceroute w postaci graficznej pod X/GTK+
 Name:		xtraceroute
 Version:	0.9.1
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://www.dtek.chalmers.se/~d3august/xt/dl/%{name}-%{version}.tar.gz
@@ -15,12 +15,13 @@ Patch2:		%{name}-opt.patch
 Patch3:		%{name}-segv.patch
 Patch4:		%{name}-stat.patch
 URL:		http://www.dtek.chalmers.se/~d3august/xt/
-BuildRequires:	OpenGL-devel
+BuildRequires:	OpenGL-GLU-devel
+BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
-BuildRequires:	autoconf
 BuildRequires:	gdk-pixbuf-devel >= 0.8.0
 BuildRequires:	gettext-devel
-BuildRequires:	gtkglarea-devel
+BuildRequires:	gtk+-devel >= 1.0.0
+BuildRequires:	gtkglarea1-devel
 BuildRequires:	libtiff-devel
 Requires:	/usr/sbin/traceroute
 Requires:	/usr/bin/host-nikhof
