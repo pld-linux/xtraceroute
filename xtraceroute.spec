@@ -1,5 +1,5 @@
 Summary:	An X and GTK+ based graphical display of traceroute's output
-Summary(pl):	Program wy¶wietlaj±cy traceroute w postaci graficznej pod X/GTK+
+Summary(pl.UTF-8):   Program wyÅ›wietlajÄ…cy traceroute w postaci graficznej pod X/GTK+
 Name:		xtraceroute
 Version:	0.9.1
 Release:	3
@@ -38,12 +38,12 @@ of yellow lines between sites, which are shown as small balls of
 different colors. You'll need a fairly fast machine, an OpenGL
 implementation (Mesa or OpenGL), GTK+, GtkGLArea, and tifflib.
 
-%description -l pl
-xtraceroute jest graficzn± wersj± programu traceroute, ¶ledz±cego
-trasê Twoich pakietów IP do celu. Pokazuje ¶cie¿kê pakietów na
-obracaj±cej siê kuli ziemskiej jako ¿ó³t± liniê pomiêdzy miejscami,
-które s± przedstawione jako ma³e kropki w ró¿nych kolorach. Program
-wymaga relatywnie szybkiej maszyny z implementacj± OpenGL'a (Mesa lub
+%description -l pl.UTF-8
+xtraceroute jest graficznÄ… wersjÄ… programu traceroute, Å›ledzÄ…cego
+trasÄ™ Twoich pakietÃ³w IP do celu. Pokazuje Å›cieÅ¼kÄ™ pakietÃ³w na
+obracajÄ…cej siÄ™ kuli ziemskiej jako Å¼Ã³Å‚tÄ… liniÄ™ pomiÄ™dzy miejscami,
+ktÃ³re sÄ… przedstawione jako maÅ‚e kropki w rÃ³Å¼nych kolorach. Program
+wymaga relatywnie szybkiej maszyny z implementacjÄ… OpenGL'a (Mesa lub
 OpenGL), GTK+, GtkGLArea oraz tifflib.
 
 %prep
