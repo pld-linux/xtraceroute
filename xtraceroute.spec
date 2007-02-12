@@ -1,5 +1,5 @@
 Summary:	An X and GTK+ based graphical display of traceroute's output
-Summary(pl.UTF-8):   Program wyświetlający traceroute w postaci graficznej pod X/GTK+
+Summary(pl.UTF-8):	Program wyświetlający traceroute w postaci graficznej pod X/GTK+
 Name:		xtraceroute
 Version:	0.9.1
 Release:	3
