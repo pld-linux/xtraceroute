@@ -23,7 +23,7 @@ BuildRequires:	gettext-devel
 BuildRequires:	gtk+-devel >= 1.0.0
 BuildRequires:	gtkglarea1-devel
 BuildRequires:	libtiff-devel
-Requires:	/usr/sbin/traceroute
+Requires:	/usr/bin/traceroute
 Requires:	/usr/bin/host-nikhof
 ExcludeArch:	ia64
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -62,7 +62,7 @@ OpenGL), GTK+, GtkGLArea oraz tifflib.
 %{__automake}
 %configure \
 	--with-lib-GL \
-	--with-traceroute=/usr/sbin/traceroute \
+	--with-traceroute=/usr/bin/traceroute \
 	--with-host=/usr/bin/host-nikhof \
 	%{?debug:--enable-debug}
 
