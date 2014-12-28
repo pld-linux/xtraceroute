@@ -19,7 +19,7 @@ BuildRequires:	OpenGL-GLU-devel
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
 BuildRequires:	gdk-pixbuf-devel >= 0.8.0
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	gtk+-devel >= 1.0.0
 BuildRequires:	gtkglarea1-devel
 BuildRequires:	libtiff-devel
